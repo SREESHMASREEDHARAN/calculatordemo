@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./scrip.js"></script>
+</head>
+<body>
+    
+    <div class="container mt-5 ">
+        <div class="row">
+          <div class="col-md-4 col-md-offset-4">
+            <!-- start of header section -->
+            <div class="row header">
+              
+              <div class="col-md-8">
+                <p>Calculator</p>
+              </div>
+              
+            </div> <!-- header div -->
+            <!-- end of header section -->
+            <!-- start of textbox -->
+            <div class="row teaxtbox mt-2">
+              <div class="col-md-12 padding-reset" >
+                <input id="result" type="text" name="" value="" placeholder="Enter">
+              </div>
+            </div>
+            <!-- end of textbox -->
+  
+            <!-- start of button design -->
+            <div class="row commonbutton">
+
+                
+              
+              <div class="col-md-3"  >
+                <input type="submit" name="" value="7" onclick="displayNumber(7)">
+              </div>
+              <div class="col-md-3">
+                <input type="submit" name="" value="8" class="" onclick="displayNumber(8)">
+              </div>
+              <div class="col-md-3">
+                <input type="submit" name="" value="9" class="" onclick="displayNumber(9)">
+              </div>
+              <div class="col-md-3">
+                <input type="submit" name="" value="*" class="" onclick="displayNumber('*')">
+              </div>
+              <!-- third row -->
+              <div class="col-md-3">
+                <input type="submit" name="" value="4" class="" onclick="displayNumber(4)">
+              </div>
+              <div class="col-md-3">
+                <input type="submit" name="" value="5" class="" onclick="displayNumber(5)">
+              </div>
+              <div class="col-md-3">
+                <input type="submit" name="" value="6" class="" onclick="displayNumber(6)">
+              </div>
+              <div class="col-md-3">
+                <input type="submit" name="" value="-" class="" onclick="displayNumber('-')">
+              </div>
+              <!-- four row -->
+              <div class="col-md-3">
+                <input type="submit" name="" value="1" class="" onclick="displayNumber(1)">
+              </div>
+              <div class="col-md-3">
+                <input type="submit" name="" value="2" class="" onclick="displayNumber(2)">
+              </div>
+              <div class="col-md-3">
+                <input type="submit" name="" value="3" class="" onclick="displayNumber(3)">
+              </div>
+              <div class="col-md-3">
+                <input type="submit" name="" value="+" class="" onclick="displayNumber('+')">
+              </div>
+
+              <!-- fifth row -->
+              <div class="col-md-3">
+                <input type="submit" name="" value="AC" class="" onclick="clearText()">
+              </div>
+              <div class="col-md-3">
+                <input type="submit" name="" value="0" class="" onclick="displayNumber(0)">
+              </div>
+              <div class="col-md-3">
+                <input type="submit" name="" value="/" class="" onclick="displayNumber('/')">
+              </div>
+              <div class="col-md-3">
+                <input type="submit" name="" value="=" class="" onclick="evaluvateExpression()">
+              </div>
+            </div> <!-- end of comonbutton div -->
+            <!-- end of button design -->
+            <!-- start of conflicting button area -->
+            <div class="row conflict">
+              <div class="col-md-9">
+                <div class="row">
+                  
+                  
+                  <div class="col-md-4">
+                    <input type="submit" name="" value="x" id="del" onclick="removeLastItem()">
+                  </div>
+                  
+                </div>
+              </div> <!-- end  zero, dot, del and equal sign div -->
+              
+            </div> <!-- end of conflicting area -->
+            <!-- end of conflicting button area -->
+          </div>
+        </div>
+      </div>
+  
+  
+  
+   
+</body>
+</html>
